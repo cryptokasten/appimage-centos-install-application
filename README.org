@@ -1,0 +1,29 @@
+#+TITLE: AppImage CentOS install application
+#+OPTIONS: ^:nil
+#+PROPERTY: header-args:sh :session *shell appimage-centos-install-application sh* :results silent raw
+
+** System environment
+
+- CentOS Linux release 8.1.1911 (Core)
+
+** Install fuse
+
+#+BEGIN_SRC sh
+yum install fuse
+#+END_SRC
+
+** Install AppImage application
+
+(Not under root!)
+
+Make it executable.
+
+#+BEGIN_SRC sh
+chmod +x application.AppImage
+#+END_SRC
+
+Install it.
+
+#+BEGIN_SRC sh
+./application.AppImage
+#+END_SRC
